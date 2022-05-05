@@ -1,0 +1,258 @@
+*,::after,::before {
+    box-sizing:border-box;
+}
+
+p, h2 {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.borderBottom {
+    border-bottom: 1px solid #3f3e3e;
+    padding-bottom: 30px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.about__info {
+    text-align: center;
+}
+.about__info h1 {
+    font-size: 42px;
+}
+
+.about__wrapper {
+    display: flex;
+}
+
+.about__avatar img {
+    max-width: 240px;
+    border-radius: 4px;
+}
+
+.about__descr {
+    margin-left: 50px;
+}
+.about__fullName p {
+    padding-top: 6px;
+    font-weight: bold;
+}
+
+.about__age {
+    margin-top: 10px;
+}
+
+.about__age p {
+    padding-top: 6px;
+    font-weight: bold;
+}
+
+.about__experience {
+    margin-top: 10px;
+}
+
+.about__experience p {
+    padding-top: 6px;
+    font-weight: bold;
+}
+
+.about__aboutMe {
+    margin-top: 10px;
+}
+
+.about__aboutMe ul{
+    margin-top: 6px;
+    padding-left: 20px;
+}
+
+.about__aboutMe ul li {
+    padding-top: 10px;
+}
+
+/*section target*/
+
+.target {
+    margin-bottom: 30px;
+}
+
+.target__title {
+    text-align: center;
+}
+
+.target__title h2 {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.target__list ul {
+    padding-left: 40px;
+}
+
+.target__list ul li{
+    padding-top: 10px;
+}
+
+/*section weeklyTime*/
+
+.weeklyTime {
+    margin-bottom: 30px;
+}
+
+.weeklyTime__title {
+    text-align: center;
+}
+
+.weeklyTime__title h2{
+    font-size: 32px;
+}
+
+.weeklyTime__table {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.weeklyTime__table table {
+    border-collapse: separate;
+    border-spacing: 80px 3px;
+}
+
+/*section completedCourses*/
+
+.completedCourses {
+    margin-bottom: 30px;
+}
+
+.completedCourses__title {
+    text-align: center;
+}
+
+.completedCourses__title h2 {
+    font-size: 32px;
+}
+
+.completedCourses__table {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.completedCourses__table table {
+    border-collapse: separate;
+    border-spacing: 80px 10px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.completedCourses__table table .tableLine{
+    border-top: 1px solid #505050;
+}
+
+.completedCourses__table table td a {
+    color: #000;
+}
+
+/*section contacts*/
+
+.contacts__title {
+    text-align: center;
+}
+
+.contacts__title h2 {
+    font-size: 32px;
+}
+
+.contacts__links {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.contacts__links a img{
+    margin-left: 20px;
+}
+
+.contacts__links a img:hover{
+    transform: translateY(-3px);
+    transition: all .3s ease-out;
+    opacity: 0.9;
+}
+
+.git, .vk, .telegram {
+    width: 60px;
+    height: 60px;
+}
+
+/*media*/
+
+@media (max-width: 570px) {
+
+    .weeklyTime__table table {
+        border-spacing: 70px 3px;
+    }
+
+    .completedCourses__table table {
+        border-spacing: 70px 10px;
+    }
+
+    .about__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__info h1 {
+        font-size: 32px;
+    }
+
+    .about__descr {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .about__aboutMe ul {
+        margin-left: 20px;
+
+    }
+
+    .about__aboutMe ul li {
+        text-align: left;
+    }
+
+    .target__title .sub {
+        font-size: 26px;
+    }
+
+    .weeklyTime__title .sub {
+        font-size: 26px;
+    }
+
+    .completedCourses__title .sub {
+        font-size: 26px;
+    }
+
+    .contacts__title .sub {
+        font-size: 26px;
+    }
+
+
+}
+
+
+
